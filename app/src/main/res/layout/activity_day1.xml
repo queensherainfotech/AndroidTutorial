@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvDisplay"
+        android:text="Hello World 1"
+        android:textColor="@color/textColor"
+        android:layout_margin="5sp"
+        android:gravity="center_vertical"
+        android:drawableStart="@mipmap/ic_avatar"
+        android:drawablePadding="5sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtInput"
+        android:layout_margin="5sp"
+        android:inputType="text"
+        android:hint="Enter your text here"
+        android:layout_below="@+id/txvDisplay"
+        android:textColor="@android:color/black"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnClickMe"
+        android:text="Click"
+        android:textAllCaps="false"
+        android:layout_below="@id/edtInput"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNextPage"
+        android:text="Next Page"
+        android:textAllCaps="false"
+        android:layout_below="@id/btnClickMe"
+        android:layout_margin="10sp"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

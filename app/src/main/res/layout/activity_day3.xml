@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkboxMango"
+        android:text="Mango"
+        android:textSize="18sp"
+        android:layout_margin="5sp"
+        android:layout_centerHorizontal="true"/>
+    <CheckBox
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkboxPineapple"
+        android:text="Pineapple"
+        android:textSize="18sp"
+        android:layout_margin="5sp"
+        android:layout_below="@id/chkboxMango"
+        android:layout_centerHorizontal="true"/>
+    <CheckBox
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkboxGrapes"
+        android:text="Grapes"
+        android:textSize="18sp"
+        android:layout_margin="5sp"
+        android:layout_below="@id/chkboxPineapple"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCheckFruit"
+        android:text="Check fruit"
+        android:layout_below="@id/chkboxGrapes"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5sp"/>
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:id="@+id/imgViewDemo"
+        android:contentDescription="demo image"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnCheckFruit"
+        android:background="@color/colorAccent"
+        android:src="@mipmap/ic_trophy"
+        android:layout_marginBottom="10sp"/>
+
+    <ImageButton
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:id="@+id/imgbtnDemo"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:contentDescription="demo image button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imgViewDemo"
+        android:src="@mipmap/ic_play"/>
+</RelativeLayout>
