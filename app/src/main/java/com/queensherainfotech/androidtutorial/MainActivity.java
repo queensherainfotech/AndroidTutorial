@@ -39,6 +39,11 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     break;
                 }
+                case "Day 4":{
+                    Intent intent = new Intent(MainActivity.this,Day4Activity.class);
+                    startActivity(intent);
+                    break;
+                }
                 default:
                     Toast.makeText(this, "Activity not done yet", Toast.LENGTH_SHORT).show();
             }

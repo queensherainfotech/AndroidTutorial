@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvSeekbarValue"
+        android:text="Seekbar value: "
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5sp"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekbarDemo"
+        android:min="10"
+        android:max="50"
+        android:layout_below="@id/txvSeekbarValue"
+        android:layout_margin="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvProgressbarValue"
+        android:text="Progressbar value: "
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/seekbarDemo"
+        android:layout_marginTop="5sp"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbarDemo"
+        android:layout_below="@id/txvProgressbarValue"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10sp"
+        android:indeterminate="true"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/> <!-- remove style to create circular progress bar -->
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:id="@+id/webviewDemo"
+        android:layout_below="@id/progressbarDemo"
+        android:layout_marginTop="10sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtInputUrl"
+        android:layout_margin="5sp"
+        android:paddingStart="10sp"
+        android:inputType="textUri"
+        android:hint="Enter HTML code"
+        android:layout_below="@+id/webviewDemo"
+        android:textColor="@android:color/black"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOpenLink"
+        android:text="Run code"
+        android:textAllCaps="false"
+        android:layout_below="@id/edtInputUrl"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
